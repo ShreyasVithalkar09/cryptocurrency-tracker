@@ -60,7 +60,7 @@ function App() {
             type="text"
             name=""
             id="search"
-            placeholder="Search the coin.."
+            placeholder="Search the coin..."
             onChange={handleChange}
           />
         </div>
