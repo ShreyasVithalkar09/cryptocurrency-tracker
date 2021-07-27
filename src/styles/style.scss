@@ -1,0 +1,144 @@
+@import "./colors";
+@import "./media_queries";
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Nunito&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $bg-color;
+  color: $light;
+  font-family: "Mulish", sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  min-height: 100vh;
+
+
+  @include phablet {
+    padding: 1rem;
+  }
+}
+
+.operations {
+  display: flex;
+  justify-content: center;
+//   border: 1px solid yellow;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:100;
+
+  
+
+}
+
+.country {
+  select {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+    color: $dark;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 1rem;
+    outline: none;
+    margin-left: 2rem;
+
+    option {
+      text-transform: uppercase;
+      background-color: $dark;
+    }
+  }
+}
+
+#search {
+  padding: 0.5rem 1rem;
+  width: 15rem;
+  border-radius: 1rem;
+  border: 1.2px solid $secondary;
+  outline: none;
+  background-color: #121212;
+  color: $light;
+
+  @include phablet {
+    width: 10.2rem;
+  }
+}
+
+.coinContainer {
+  width: 70%;
+  margin: auto;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+
+  // position: sticky;
+  // overflow-y: scroll;
+  // z-index: 99;
+  // margin-top: 3rem;
+
+
+  &::-webkit-scrollbar{
+      display: none;
+  }
+
+  @include phablet {
+    width: 100%;
+  }
+}
+
+.coinImage {
+  width: 30px;
+  height: 30px;
+}
+
+.symbol {
+  text-transform: uppercase;
+}
+
+table,
+td,
+th {
+  text-align: left;
+  font-size: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  th{
+      position: sticky;
+      top: 0;
+  }
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 0.2px solid rgb(219, 219, 219);
+}
+.coinPercent {
+  &_red {
+    color: rgb(255, 29, 29);
+  }
+
+  &_green {
+    color: #3eff3e;
+  }
+}
+
+.mobileContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+ 
+}

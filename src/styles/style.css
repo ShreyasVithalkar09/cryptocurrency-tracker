@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Nunito&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #131313;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 702px) {
+  .App {
+    padding: 1rem;
+  }
+}
+
+.operations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.country select {
+  padding: 0.5rem 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f8ff00), to(#3ad59f));
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+  color: #212121;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 1rem;
+  outline: none;
+  margin-left: 2rem;
+}
+
+.country select option {
+  text-transform: uppercase;
+  background-color: #212121;
+}
+
+#search {
+  padding: 0.5rem 1rem;
+  width: 15rem;
+  border-radius: 1rem;
+  border: 1.2px solid #f8ff00;
+  outline: none;
+  background-color: #121212;
+  color: #fff;
+}
+
+@media screen and (max-width: 702px) {
+  #search {
+    width: 10.2rem;
+  }
+}
+
+.coinContainer {
+  width: 70%;
+  margin: auto;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+}
+
+.coinContainer::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 702px) {
+  .coinContainer {
+    width: 100%;
+  }
+}
+
+.coinImage {
+  width: 30px;
+  height: 30px;
+}
+
+.symbol {
+  text-transform: uppercase;
+}
+
+table,
+td,
+th {
+  text-align: left;
+  font-size: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 0.2px solid #dbdbdb;
+}
+
+.coinPercent_red {
+  color: #ff1d1d;
+}
+
+.coinPercent_green {
+  color: #3eff3e;
+}
+
+.mobileContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

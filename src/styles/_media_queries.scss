@@ -1,0 +1,5 @@
+@mixin phablet {
+    @media screen and (max-width:702px) {
+        @content;
+    }    
+}

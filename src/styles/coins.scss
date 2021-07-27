@@ -1,0 +1,42 @@
+.coinCard{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.2px solid rgb(219, 219, 219);
+  }
+  
+  .imageIcon {
+    width: 10%;
+    img{
+  
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  
+  .title{
+    width: 40%;
+  }
+  
+  
+  .priceData{
+    width: 50%;
+    text-align: right;
+  }
+  
+  
+  .title, .priceData {
+    margin-left: 1rem;
+    h1{
+      font-size: 1rem;
+    }
+  
+    p{
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+  }
+  
+  
